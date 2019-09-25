@@ -13,6 +13,12 @@
     <!--JQuery Link-->
     <script src="assets/javascript/jquery-3.3.1.min.js"></script>
 
+    <!-- Firebase References -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <title>Train Times</title>
 </head>
 
@@ -24,56 +30,54 @@
                 <p class="lead">It's the choo choo, ride it, woo woo</p>
             </div>
         </div>
+        <div class="row mx-1">
+            <form class="card px-0 col-lg-6">
+                <div class="card-header">
+                    Add Train
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="train-name">Train Name</label>
+                        <input type="text" class="form-control" id="train-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <input type="text" class="form-control" id="destination">
+                    </div>
+                    <div class="form-group">
+                        <label for="frequency">Frequency (min)</label>
+                        <input type="text" class="form-control" id="frequency">
+                    </div>
+                    <div class="form-group">
+                        <label for="train-time">First Train Time (HH:mm - military time)</label>
+                        <input type="text" class="form-control" id="train-time">
+                    </div>
+                    <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+            <div class="col-lg-6 pt-md-3 pt-lg-0">
+                <div class="card-header">
+                    Current Train Schedule
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency (min)</th>
+                            <th scope="col">Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody>
 
-        <div class="card">
-            <div class="card-header">
-               Current Train Schedule
+                    </tbody>
+                </table>
             </div>
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th scope="col">Train Name</th>
-                        <th scope="col">Destination</th>
-                        <th scope="col">Frequency (min)</th>
-                        <th scope="col">Next Arrival</th>
-                        <th scope="col">Minutes Away</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                </tbody>
-            </table>
         </div>
-
-        <form class="card mt-3">
-            <div class="card-header">
-                Add Train
-            </div>
-            <div class="card-body">
-                <div class="form-group">
-                    <label for="train-name">Train Name</label>
-                    <input type="text" class="form-control" id="train-name">
-                </div>
-                <div class="form-group">
-                    <label for="destination">Destination</label>
-                    <input type="text" class="form-control" id="destination">
-                </div>
-                <div class="form-group">
-                    <label for="train-time">First Train Time (HH:mm - military time)</label>
-                    <input type="text" class="form-control" id="train-time">
-                </div>
-                <div class="form-group">
-                    <label for="frequency">Frequency (min)</label>
-                    <input type="text" class="form-control" id="frequency">
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-        </form>
     </div>
 
     <!--JavaScript Links-->
     <script src="assets/javascript/app.js"></script>
-    <script src="assets/javascript/moment.js"></script>
 
     <!--JQuery Bootstrap Links-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -82,6 +86,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>

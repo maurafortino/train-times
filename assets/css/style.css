@@ -1,0 +1,27 @@
+.jumbotron{
+    background-color: rgb(179,172,208);
+}
+
+.card-header{
+    background-color: rgb(195,172,192);
+}
+
+#submit{
+    background-color: 	rgb(211,172,176);
+    border-color:	rgb(211,172,176);
+    color: black;
+}
+
+#submit:hover{
+    background-color: 		rgb(211,172,176);
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: rgb(195,172,192);
+ }
+
+ input[type="text"], textarea {
+
+    background-color : rgb(195,172,192);
+  
+  }
