@@ -19,6 +19,7 @@ $(document).ready(function() {
   function(){
       $(this).css({'background-color' : 'rgb(195,172,192)'});
   });
+});
 
 //function for on
 $("#submit").on("click", function (event) {
